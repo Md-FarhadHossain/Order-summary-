@@ -1,0 +1,144 @@
+/* font-family: 'Red Hat Display', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+
+:root {
+    /* Primary Color */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* Neutral Color */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Main section design */
+section {
+    background-image: url(images/pattern-background-desktop.svg), linear-gradient(to right, var(--pale-blue), var(--pale-blue));
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__content {
+    border-radius: .5em;
+    overflow: hidden;
+    background: #fff;
+    width: 50%;
+    margin: auto;
+}
+.top__part img {
+    width: 100%;
+}
+.container {
+    text-align: center;
+    padding: 2.6rem 2rem;
+}
+
+.annual__plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--very-pale-blue);
+    border-radius: .6em;
+    padding: 1rem 1.3rem;
+}
+
+.plan__left--side {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    align-items: center;
+}
+.title h1 {
+    font-weight: bold;
+}
+
+.description p {
+    color: darkgray;
+    margin-bottom: 1.6rem;
+    margin-top: 1.2rem;
+}
+.music__type h4 {
+    font-size: 14px;
+}
+
+.music__type p {
+    color: darkgray;
+}
+button.btn {
+    width: 100%;
+    border: none;
+    padding: .7rem;
+    font-weight: bold;
+    background: var(--bright-blue);
+    color: #fff;
+    border-radius: .6em;
+    box-shadow: 0px 10px 18px #3829e04f;
+    margin: 1rem 0rem;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all .3s ease-in-out;
+}
+button.btn:hover {
+    opacity: .6;
+}
+.cancel__order a {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkgray;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+}
+.cancel__order a:hover {
+    color: #000;
+}
+.plan__right--side a {
+    font-weight: bold;
+    transition: all .2s;
+
+}
+
+.plan__right--side a:hover {
+    text-decoration: none;
+    opacity: .6;
+}
+.music__icon {
+    display: flex;
+}
+
+@media screen and (max-width: 752px){
+
+    .music__icon img {
+        width: 47px;
+    }
+}
+@media screen and (max-width: 752px){
+    .title h2 {
+        font-size: 20px;
+    }
+    .description p {
+        font-size: 12px;
+    }
+    .music__type p {
+        font-size: 12px;
+    }
+    .music__type h4 {
+        font-size: 11px !important;
+    }
+    /* .annual__plan {
+        padding: .5rem .5rem;
+    } */
+    .container {
+        padding: 2rem 1rem;
+    }
+    .main__content {
+        width: 75% !important;
+    }
+}
